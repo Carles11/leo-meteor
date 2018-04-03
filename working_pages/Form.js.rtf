@@ -1,0 +1,146 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 import React from 'react'\
+//import \{ Dropdown, Menu \} from 'semantic-ui-react'\
+//import DropdownYear from './DropdownYear'\
+\
+export default class Forms extends React.Component\{\
+	handleClack()\{\
+                this.props.history.push('/Admin')\
+        \}\
+    handleClock()\{\
+                this.props.history.push('/Admin')\
+        \}\
+    handleClick()\{\
+           var school = this.refs.escuela.value.trim()\
+           var classe   = this.refs.clase.value.trim()\
+           var contactperson = this.refs.contacto.value.trim()\
+           var telefon = this.refs.telefono.value.trim()\
+           var address = this.refs.direccion.value.trim()\
+           var email = this.refs.email.value.trim()\
+           var year = this.refs.year.value.trim()\
+           var password = this.refs.password.value.trim()\
+           debugger\
+\
+           this.props.addSchool(school,classe,contactperson,telefon,address,email,year,password)\
+\
+        \}\
+\
+	render()\{\
+		return(\
+			<div  className= 'background_pic_black section_forms_height'>\
+    <div className='contacto_grid'>\
+    <div className='center'>\
+        <h2>REGISTRA TU ESCUELA</h2>\
+        <span >\
+        <div className='padding_updown'>\
+            <span className= 'label'>Nombre de la escuela</span><br />\
+            <input \
+                ref='escuela' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Clase</span><br />\
+            <input \
+                ref='clase' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Persona de contacto</span><br />\
+            <input \
+                ref='contacto' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Tel\'e9fono</span><br />\
+            <input \
+                ref='telefono' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Direcci\'f3n</span><br />\
+            <input \
+                ref='direccion'\
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>E-mail</span><br />\
+            <input \
+                ref='email' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Quiero registrarme para la edici\'f3n:</span><br />\
+            <input \
+                ref='year' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Introduce una contrase\'f1a:</span><br />\
+            <input \
+                ref='password' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Repite tu contrase\'f1a:</span><br />\
+            <input \
+                ref='secondPassword' \
+                className='input_field'/><br />\
+        </div>\
+\
+            <div className='padding_top_less'>\
+                <button className=' save_button' onClick=\{this.handleClick.bind(this)\}>REGISTRAR</button>\
+                <button className='discard_button' onClick=\{this.handleClack.bind(this)\}>CANCELAR</button>\
+            </div>\
+        </span>\
+    </div>\
+    <div className='center'>\
+        <h2>CONT\'c1CTANOS</h2>\
+        <span className='center'>\
+        <div className='padding_updown'>\
+            <span className= 'label '>T\'edtulo</span><br />\
+            <input \
+                ref='titulo' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Mensaje</span><br />\
+            <input \
+                ref='mensaje' \
+                className='longtext_input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Persona de contacto</span><br />\
+            <input \
+                ref='contacto'\
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>Tel\'e9fono</span><br />\
+            <input \
+                ref='telefono' \
+                className='input_field'/><br />\
+        </div>\
+        <div className='padding_top_less'>\
+            <span className= 'label '>E-mail</span><br />\
+            <input \
+                ref='email' \
+                className='input_field'/><br />\
+        </div>\
+            <div className='padding_top_less'>\
+                <button className='save_button' onClick=\{this.handleClock.bind(this)\}>ENVIAR</button>\
+                <button className='discard_button' onClick=\{this.handleClack.bind(this)\}>CANCELAR</button>\
+            </div>\
+        </span>\
+    </div>\
+    </div>\
+\
+    </div>\
+		)\
+	\}\
+\}}
