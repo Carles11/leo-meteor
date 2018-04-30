@@ -62,7 +62,7 @@ handleTak(){
 			display: this.state.display,
 			textAlign: 'right'
 		}
-		 let burger ={
+		let burger ={
 		 	transform:this.state.transform
 		}
 		return(

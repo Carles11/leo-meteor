@@ -8,9 +8,11 @@
     "@babel/runtime": "^7.0.0-beta.42",
     "bcrypt": "^1.0.3",
     "meteor-node-stubs": "^0.3.2",
-    "react": "^15.6.1",
+    "react": "^15.6.2",
     "react-burger-menu": "^1.1.6",
-    "react-dom": "^15.6.1",
+    "react-dom": "^15.6.2",
+    "react-images": "^0.5.17",
+    "react-photo-gallery": "^6.0.22",
     "react-router": "^2.0.0",
     "react-scrollchor": "^4.2.1",
     "semantic-ui-react": "^0.78.2"
