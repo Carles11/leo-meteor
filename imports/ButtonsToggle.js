@@ -9,7 +9,7 @@ export default class ButtonsToggle extends React.Component{
                 <div className="center">
                     <button 
                         className="register_button"
-                        onClick={this.props.toggle}>REGISTRO</button>
+                        onClick={this.props.toggle}>INSCRIPCIÓN</button>
                 	{this.props.showPopup ? 
                     <FormPopUp
                     closePopup={this.props.toggle}

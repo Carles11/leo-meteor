@@ -16,7 +16,7 @@ export default class InputRegName extends React.Component {
 	                className='input_field'/><br />
 	        </div>
 	        <div className='padding_top_input'>
-	            <span className= 'label '>Clase</span><br />
+	            <span className= 'label '>Curso</span><br />
 	            <input 
 	                id='classe' 
 	                onChange= {this.handleChange.bind(this)}

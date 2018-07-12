@@ -133,7 +133,7 @@ class Home extends Component {
                     className= 'img_center_leo' 
                     src= "https://res.cloudinary.com/dssldws2k/image/upload/v1522366616/Leoleo/Leon_gafas.png"/>
                 <h2 >Concurso de lectura en español</h2>
-                <h4 className="h4_title"> Próxima edición 8 de mayo de 2018 <br />
+                <h4 className="h4_title"> Próxima edición 11 de mayo de 2019 <br />
                 en el Instituto Cervantes Frankfurt</h4>
             </div>
             <div id="concurso"                
